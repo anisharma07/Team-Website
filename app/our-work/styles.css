@@ -1,0 +1,64 @@
+/* .card-gradient {
+  background-image: radial-gradient(
+    circle farthest-side at 50% 50%,
+    #00ff1e46 0%,
+    transparent 100%
+  );
+}
+.card-gradient-reversed-2 {
+  background-image: radial-gradient(
+    circle farthest-side at -100% 50%,
+    #9531ff49 0%,
+    transparent 100%
+  );
+}
+.card-gradient-reversed {
+  background-image: radial-gradient(
+    circle farthest-side at 50% 50%,
+    #9b75ff6d 0%,
+    transparent 100%
+  );
+}
+@media (width<=450px) {
+  .card-gradient {
+    background-image: radial-gradient(
+      circle farthest-side at 200% 50%,
+      #00ffaac0 0%,
+      transparent 90%
+    );
+  }
+  .card-gradient-reversed-2 {
+    background-image: radial-gradient(
+      circle farthest-side at -100% 50%,
+      #9531ff79 0%,
+      transparent 100%
+    );
+  }
+  .card-gradient-reversed {
+    background-image: radial-gradient(
+      circle farthest-side at -100% 50%,
+      rgba(147, 104, 255, 0.634) 0%,
+      transparent 90%
+    );
+  }
+} */
+
+.bg-gradient-circle-mobile {
+  width: 1200px;
+  height: 1200px;
+}
+.bg-gradient-circle {
+  width: 1200px;
+  height: 1200px;
+}
+
+.bg-poster-overlay {
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+.special_for_paradox:hover .path-fill-playstore {
+  fill: #000000;
+  transition: all 0.3s ease-in-out;
+}

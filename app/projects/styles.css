@@ -1,0 +1,65 @@
+/* Button.module.css */
+
+.mySwiper {
+  width: 70%;
+  max-width: 1200px;
+  min-width: 636px;
+}
+.bg-gradient-circle {
+  width: 1400px;
+  height: 1400px;
+}
+
+.bg-gradient-purple {
+  background-image: radial-gradient(
+    circle farthest-side at 50% 50%,
+    #9b75ff6d 0%,
+    transparent 100%
+  );
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.086);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.191);
+}
+.this-is-flex-child-1 {
+  width: calc(100% - 350px);
+}
+@media (width<=1199px) {
+  .this-is-flex-child-1 {
+    width: calc(100% - 300px);
+  }
+}
+.domain-link-1:hover path {
+  fill: black;
+  transition: all 0.3s ease-in-out;
+}
+.domain-link-2:hover path {
+  fill: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.domain-link-3:hover path {
+  fill: black;
+  transition: all 0.3s ease-in-out;
+}
+.domain-link-4:hover path {
+  stroke: black;
+  transition: all 0.3s ease-in-out;
+}
+.domain-link-5:hover path {
+  fill: black;
+  transition: all 0.3s ease-in-out;
+}
+@media (width<=786px) {
+  .this-is-flex-child-1 {
+    width: 100%;
+  }
+  .mySwiper {
+    width: 90%;
+    min-width: 0px;
+  }
+}

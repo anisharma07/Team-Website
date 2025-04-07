@@ -1,0 +1,24 @@
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.104);
+  padding: 10px;
+  border-radius: 7px;
+  pointer-events: none;
+  margin: 20px 0;
+}
+.feature.active {
+  padding-left: 20px;
+  padding-right: 0;
+  border-left: 2px solid rgb(255, 255, 255);
+  margin: 20px 0 30px;
+}
+.feature.active h4 {
+  color: rgb(255, 255, 255);
+}
+.feature.active .description {
+  opacity: 1;
+  pointer-events: all;
+}

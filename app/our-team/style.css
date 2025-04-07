@@ -1,0 +1,17 @@
+.garnish {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff2d;
+}
+
+.members-social-links {
+  display: flex;
+}
+.members-card-div {
+  background-image: url("../../public/assets/images/grains.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+}

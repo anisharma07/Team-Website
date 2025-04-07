@@ -1,0 +1,138 @@
+/* gradients  */
+
+.sembuttondiv:hover .semester {
+  top: -70px;
+  transition: all 0.2s ease-in;
+}
+.sembuttondiv:hover .theory-card,
+.sembuttondiv:hover .lab-card {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+.btn-trans {
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.353) 50%,
+    rgba(59, 59, 59, 0.466) 100%
+  );
+  border-radius: 28px;
+}
+.btn-trans:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 0.8) 100%,
+    rgba(102, 102, 102, 0.6) 100%
+  );
+}
+.btn-trans-absolute {
+  background: linear-gradient(150deg, rgba(0, 0, 0, 0.373) 30%, #83838389 100%);
+  border-radius: 28px;
+}
+
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+/*This activates the sheen once the button has been hovered*/
+.sheen:hover::after,
+.sheen:focus::after {
+  animation: shine 1s forwards;
+}
+#footer-block {
+  background: #23263091;
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+}
+@keyframes shine {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+.hover-study-modal {
+  display: none;
+}
+.question-group:hover .hover-study-modal {
+  display: block;
+}
+
+.loader-after-submit {
+  width: 40px;
+  --b: 7px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%, #ffffff) content-box;
+  -webkit-mask: repeating-conic-gradient(
+      #0000 0deg,
+      #000 1deg 20deg,
+      #0000 21deg 36deg
+    ),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - var(--b) - 1px),
+      #000 calc(100% - var(--b))
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l4 1s infinite steps(10);
+}
+@keyframes l4 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.instagram-icon {
+  position: relative;
+}
+
+.instagram-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.instagram-icon:hover::before {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
